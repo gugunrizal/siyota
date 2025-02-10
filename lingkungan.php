@@ -114,22 +114,391 @@
                                     <img src="assets/images/bg.jpg" alt="" width="100%" class="shadow-lg p-2 mb-5 bg-body-tertiary rounded">
                                 </div>
                             </div>
-                            <div class="row">
-                                <span class="col">
-                                    <i class="fas fa-tachometer-alt"></i>
+                            <div class="row my-2">
+                                <span class="col align-baseline">
+                                    <a href="#" class="h6 text-success text-decoration-none">
+                                        <i class="fas fa-tachometer-alt text-success"></i>
+                                        <strong>Informasi Kegiatan Lingkungan</strong>
+                                    </a>
                                 </span>
                             </div>
-                            <div class="row my-5">
-                                <div class="col-4">
-                                    <a href="#" class="btn btn-warning d-grid gap-2">Putar Jinggle YETC</a>
-                                </div>
+                            <div class="row my-2">
+                                <span class="col align-baseline">
+                                    <a href="#" class="h6 text-success text-decoration-none">
+                                        <i class="fas fa-tachometer-alt text-success"></i>
+                                        <strong>Sistem Pengelolaan Sampah</strong>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="row my-2">
+                                <span class="col align-baseline">
+                                    <a href="#" class="h6 text-success text-decoration-none">
+                                        <i class="fas fa-tachometer-alt text-success"></i>
+                                        <strong>Monitoring IoT</strong>
+                                    </a>
+                                </span>
                             </div>
                         </div>
                         <div class="col-4 mt-5">
                             <img src="assets/images/bg.jpg" alt="" width="100%" class="shadow-lg p-2 mb-5 bg-body-tertiary rounded">
                         </div>
-                        <hr>
+                    </div>
 
+                    <hr>
+                    .
+                    <div class="container-fluid px-5">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="fas fa-tachometer-alt text-success"></i>
+                                                <strong>Informasi Kegiatan Lingkungan</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3 bg-success py-3 mx-1 rounded">
+                                        <img src="assets/images/bg.jpg" alt="" width="100%">
+                                        <p class="fw-semibold text-white">Kegiatan Green Journey Nature Conversation</p>
+                                        <a href="#" class="btn btn-warning d-grid">Lihat Lebih Detail</a>
+                                    </div>
+                                    <div class="col-12 col-md-3 bg-success py-3 mx-1 rounded">
+                                        <img src="assets/images/bg.jpg" alt="" width="100%">
+                                        <p class="fw-semibold text-white">Kegiatan Green Journey Nature Conversation</p>
+                                        <a href="#" class="btn btn-warning d-grid">Lihat Lebih Detail</a>
+                                    </div>
+                                    <div class="col-12 col-md-3 bg-success py-3 mx-1 rounded">
+                                        <img src="assets/images/bg.jpg" alt="" width="100%">
+                                        <p class="fw-semibold text-white">Kegiatan Green Journey Nature Conversation</p>
+                                        <a href="#" class="btn btn-warning d-grid">Lihat Lebih Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="text-success"><b>LAINNYA</b></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col my-1 text-success">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <strong>Sistem Pengelolaan Sampah</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col my-1 text-success">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <strong>Monitoring IoT</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="container-fluid px-5">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="fas fa-tachometer-alt text-success"></i>
+                                                <strong>Sistem Pengelolaan Sampah</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="row">
+                                            <div class="col-12 col-md-5 mx-1 my-1 bg-success py-2 rounded">
+                                                <img src="assets/images/bg.jpg" width="100%" alt="">
+                                                <a href="#" class="btn btn-warning d-grid">Bank Sampah</a>
+                                            </div>
+                                            <div class="col-12 col-md-5 mx-1 my-1 bg-success py-2 rounded">
+                                                <img src="assets/images/bg.jpg" width="100%" alt="">
+                                                <a href="#" class="btn btn-warning d-grid">Pertanian Organik</a>
+                                            </div>
+                                            <div class="col-12 col-md-5 mx-1 my-1 bg-success py-2 rounded">
+                                                <img src="assets/images/bg.jpg" width="100%" alt="">
+                                                <a href="#" class="btn btn-warning d-grid">Pusat Kerajinan Barang Bekas</a>
+                                            </div>
+                                            <div class="col-12 col-md-5 mx-1 my-1 bg-success py-2 rounded">
+                                                <img src="assets/images/bg.jpg" width="100%" alt="">
+                                                <a href="#" class="btn btn-warning d-grid">Donasi Sampah</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <p class="fw-bold text-success h6">Lihat Pusat Pengolaan Sampah Terdekat</p>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.637177721107!2d107.65892917414173!3d-6.933895167872038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9e65b4f0933%3A0xf4fc4c94dd779854!2sDinas%20Lingkungan%20Hidup%20Provinsi%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1739174941741!5m2!1sid!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="row my-4">
+                                    <div class="col-12 col-md-12">
+                                        <p class="text-warning h3">Bank Sampah</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-2 py-2 mx-1 bg-success rounded">
+                                        <img src="assets/images/bg.jpg" width="100%" alt="">
+                                        <p class="text-white">Nama Bank Sampah</p>
+                                        <p class="text-white">Lokasi Bank Sampah</p>
+                                        <p class="text-white">Jam Operasional Bank Sampah</p>
+                                        <p class="text-white">Kontak Person</p>
+                                    </div>
+                                    <div class="col-12 col-md-2 py-2 mx-1 bg-success rounded">
+                                        <img src="assets/images/bg.jpg" width="100%" alt="">
+                                        <p class="text-white">Nama Bank Sampah</p>
+                                        <p class="text-white">Lokasi Bank Sampah</p>
+                                        <p class="text-white">Jam Operasional Bank Sampah</p>
+                                        <p class="text-white">Kontak Person</p>
+                                    </div>
+                                    <div class="col-12 col-md-2 py-2 mx-1 bg-success rounded">
+                                        <img src="assets/images/bg.jpg" width="100%" alt="">
+                                        <p class="text-white">Nama Bank Sampah</p>
+                                        <p class="text-white">Lokasi Bank Sampah</p>
+                                        <p class="text-white">Jam Operasional Bank Sampah</p>
+                                        <p class="text-white">Kontak Person</p>
+                                    </div>
+                                    <div class="col-12 col-md-2 py-2 mx-1 bg-success rounded">
+                                        <img src="assets/images/bg.jpg" width="100%" alt="">
+                                        <p class="text-white">Nama Bank Sampah</p>
+                                        <p class="text-white">Lokasi Bank Sampah</p>
+                                        <p class="text-white">Jam Operasional Bank Sampah</p>
+                                        <p class="text-white">Kontak Person</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="text-success"><b>LAINNYA</b></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col my-1 text-success">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <strong>Informasi Kegiatan Lingkungan</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col my-1 text-success">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <strong>Monitoring IoT</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <span class="col align-baseline">
+                                    <a href="#" class="h6 text-success text-decoration-none">
+                                        <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                        <strong>Monitoring IoT</strong>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-12 col-md-8">
+                                <div class="row bg-info">
+                                    <div class="col">
+                                        <div class="row my-2">
+                                            <div class="col">Berdasarkan Lokasimu sekarang, Baleendah</div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Suhu</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Sensor Potensi Banjir</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Kelembapan</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Sensor Potensi Gempa</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Kecepatan Angin</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Senso Kualitas Air</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Hujan atau Tidak Hujan</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="text-success"><b>Kamu memasang Perangkat Penyiraman Otomatis</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Kualitas Air Hujan</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Kelembapan Tanah</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Cuaca</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Status Penyiraman</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Potensi Bencana</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="btn btn-warning d-grid gap-2">Jelajahi Perangkat Lainnya</p>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">DARURAT!</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                            </div>
+                                            <div class="col-4">
+
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-2">
+                                        <p class="btn btn-success d-grid gap-2">Suhu</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <p class="btn btn-success d-grid gap-2">Suhu</p>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="text-success"><b>LAINNYA</b></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col my-1 text-success">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <strong>Informasi Kegiatan Lingkungan</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col my-1 text-success">
+                                        <span class="col align-baseline">
+                                            <a href="#" class="h6 text-success text-decoration-none">
+                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <strong>Monitoring IoT</strong>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
