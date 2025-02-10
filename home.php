@@ -279,156 +279,277 @@
                                             <div class="col-4">
 
                                             </div>
-                                            <!-- <div class="col-2">
+                                        </div>
+                                        <!-- <div class="col-2">
                                         <p class="btn btn-success d-grid gap-2">Suhu</p>
                                     </div>
                                     <div class="col-2">
                                         <p class="btn btn-success d-grid gap-2">Suhu</p>
                                     </div> -->
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h1 class="text-success text-center"><strong>Kegiatan Terbaru</strong></h1>
-                                <div class="row my-4 text-center">
-                                    <div class="col-md-4">
-                                        <p class="btn btn-success d-grid gap-2">Soft SKill</p>
-                                        <div class="card">
-                                            <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="text-center btn btn-success d-grid gap-2">Bootcamp</p>
-                                        <div class="card">
-                                            <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="text-center btn btn-success d-grid gap-2">E-Learning</p>
-                                        <div class="card">
-                                            <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 mx-auto my-1">
-                                        <a href="#" class="btn btn-warning d-grid gap-2">Daftar Pelatihan</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 mx-auto my-1">
-                                        <a href="#" class="btn btn-warning d-grid gap-2">Daftar Event</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <h1 class="text-success text-center"><strong>Artikel</strong></h1>
-                                <div class="row my-4">
-                                    <div class="col-md-10 mx-auto">
-                                        <div class="card">
-                                            <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text h4 text-success">
-                                                    <strong>Menyelamatkan Bumi dengan Inovasi Ramah Lingkungan</strong>
-                                                </p>
-                                                <p class="card-text">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime assumenda sunt nemo temporibus. Laboriosam quaerat doloremque delectus. Cum veniam repellat sapiente dicta nesciunt. Exercitationem, sapiente accusamus! Mollitia consectetur et officiis, saepe ducimus optio consequuntur eaque laboriosam sequi omnis laborum, natus eligendi voluptatibus inventore iusto! Necessitatibus, similique velit? Quisquam, vel rem.
-                                                </p>
-                                                <a href="#" class="text-success">Baca Selengkapnya</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr class="my-2">
-
-                        <div class="row my-2">
-                            <div class="col">
-                                <h2 class="text-success text-center"><strong>Layanan Kami</strong></h2>
-                            </div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
-                                <h4 class="text-center"><strong>Teknologi</strong></h4>
-                                <hr>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                </ul>
-                                <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
-                            </div>
-                            <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
-                                <h4 class="text-center"><strong>Teknologi</strong></h4>
-                                <hr>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                </ul>
-                                <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
-                            </div>
-                            <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
-                                <h4 class="text-center"><strong>Teknologi</strong></h4>
-                                <hr>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                </ul>
-                                <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
-                            </div>
-                            <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
-                                <h4 class="text-center"><strong>Teknologi</strong></h4>
-                                <hr>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
-                                </ul>
-                                <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
-                            </div>
-                        </div>
-
-                        <hr class="my-3">
-
-                        <div class="row">
-                            <div class="col"></div>
                         </div>
                     </div>
-                </div>
-            </main>
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid px-4">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Komunitas Pemuda Cinta Lingkungan dan Teknologi
-                            (Youth Eco-Tech Community) All rights reserved
+
+                    <hr class="my-4">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="text-success text-center"><strong>Kegiatan Terbaru</strong></h1>
+                            <div class="row my-4 text-center">
+                                <div class="col-md-4">
+                                    <p class="btn btn-success d-grid gap-2">Soft SKill</p>
+                                    <div class="card">
+                                        <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-center btn btn-success d-grid gap-2">Bootcamp</p>
+                                    <div class="card">
+                                        <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-center btn btn-success d-grid gap-2">E-Learning</p>
+                                    <div class="card">
+                                        <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mx-auto my-1">
+                                    <a href="#" class="btn btn-warning d-grid gap-2">Daftar Pelatihan</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mx-auto my-1">
+                                    <a href="#" class="btn btn-warning d-grid gap-2">Daftar Event</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="text-success text-center"><strong>Artikel</strong></h1>
+                            <div class="row my-4">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="card">
+                                        <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text h4 text-success">
+                                                <strong>Menyelamatkan Bumi dengan Inovasi Ramah Lingkungan</strong>
+                                            </p>
+                                            <p class="card-text">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime assumenda sunt nemo temporibus. Laboriosam quaerat doloremque delectus. Cum veniam repellat sapiente dicta nesciunt. Exercitationem, sapiente accusamus! Mollitia consectetur et officiis, saepe ducimus optio consequuntur eaque laboriosam sequi omnis laborum, natus eligendi voluptatibus inventore iusto! Necessitatibus, similique velit? Quisquam, vel rem.
+                                            </p>
+                                            <a href="#" class="text-success">Baca Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <hr class="my-2">
+
+                    <div class="row my-2">
+                        <div class="col">
+                            <h2 class="text-success text-center"><strong>Layanan Kami</strong></h2>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                            <h4 class="text-center"><strong>Teknologi</strong></h4>
+                            <hr>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
+                        </div>
+                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                            <h4 class="text-center"><strong>Teknologi</strong></h4>
+                            <hr>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
+                        </div>
+                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                            <h4 class="text-center"><strong>Teknologi</strong></h4>
+                            <hr>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
+                        </div>
+                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                            <h4 class="text-center"><strong>Teknologi</strong></h4>
+                            <hr>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</li>
+                            </ul>
+                            <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="row my-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="h3 text-success text-center"><strong>Program Kami</strong></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro1.png" alt="" class="" width="50%">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro3.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro4.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro5.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro7.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro6.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro8.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro1.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="#">
+                                    <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="row my-4">
+                        <div class="col-md-12 my-4">
+                            <p class="h3 text-success text-center"><strong>Mari Berkenalan dengan kami</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 ms-4">
+                            <p class="h6" style="text-align: justify;">
+                                Saya percaya bahwa masa depan generasi berikutnya sangat bergantung pada langkah yang kita ambil saat ini untuk menghadapi isu lingkungan, khususnya dampak perubahan iklim. Oleh karena itu, penting bagi kita untuk memprioritaskan keberlanjutan dengan memanfaatkan inovasi teknologi sebagai alat transformasi. Teknologi dapat menjadi solusi efektif dalam pengelolaan sumber daya, pengurangan limbah, dan mitigasi dampak iklim jika digunakan secara bijak. Namun, keberhasilan ini tidak mungkin tercapai tanpa kolaborasi erat antara berbagai pihak, mulai dari masyarakat, pelaku usaha, akademisi, hingga pemerintah. Bersama, kita memiliki tanggung jawab untuk menciptakan lingkungan yang lebih baik agar generasi mendatang dapat hidup dalam dunia yang sehat, berkelanjutan, dan penuh peluang.
+                            </p>
+                            <p class="h5"><strong>Tri Febriansah</strong></p>
+                            <p class="text-success"><i>Founder of Community</i></p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+                    <div class="row my-4">
+                        <div class="col-md-12">
+                            <p class="h3 text-success text-center"><strong>Tentang Kami</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-md-4 mx-auto">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                        <div class="col-3 col-md-4 mx-auto">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                        <div class="col-3 col-md-4 mx-auto">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                        <div class="col-3 col-md-4 mx-auto">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                        <div class="col-3 col-md-4 mx-auto">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                        <div class="col-3 col-md-4 mx-auto">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                        <div class="col-3 col-md-4 mx-auto">
+                            <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
+                        </div>
+                    </div>
+
+                    <hr class="my-3">
+
+
+                    <div class="row">
+                        <div class="col"></div>
+                    </div>
                 </div>
-            </footer>
         </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Komunitas Pemuda Cinta Lingkungan dan Teknologi
+                        (Youth Eco-Tech Community) All rights reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>
