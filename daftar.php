@@ -36,26 +36,22 @@
                     <h2 class="title">
                         <center>Registration Info<center>
                     </h2>
-                    <form method="POST">
+                    <form method="POST" action="logic-daftar.php">
                         <!-- Awal Data Diri -->
                         <h5 class="title">
                             <b>Data Diri</b>
                         </h5>
                         <div class="mb-3">
-                            <!-- <label for="nama" class="form-label">Nama Lengkap</label> -->
-                            <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+                            <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Lengkap">
                         </div>
                         <div class="mb-3">
-                            <!-- <label for="email" class="form-label">Email address</label> -->
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
                         </div>
                         <div class="mb-3">
-                            <!-- <label for="nope" class="form-label">Nomor Handphone</label> -->
-                            <input type="number" class="form-control" id="nope" placeholder="Nomor Handphone">
+                            <input type="number" name="nope" class="form-control" id="nope" placeholder="Nomor Handphone">
                         </div>
                         <div class="mb-3">
-                            <!-- <label for="alamat" class="form-label">Alamat</label> -->
-                            <input type="text" class="form-control" id="alamat" placeholder="Alamat">
+                            <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat">
                         </div>
                         <!-- Akhir Data Diri -->
 
@@ -64,16 +60,13 @@
                             <b>Informasi Akun</b>
                         </h5>
                         <div class="mb-3">
-                            <!-- <label for="username" class="form-label">Username</label> -->
-                            <input type="text" class="form-control" id="username" placeholder="Username">
+                            <input type="text" name="username" class="form-control" id="username" placeholder="Username">
                         </div>
                         <div class="mb-3">
-                            <!-- <label for="password" class="form-label">Password</label> -->
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         </div>
                         <div class="mb-3">
-                            <!-- <label for="password2" class="form-label">Konfirmasi Password</label> -->
-                            <input type="password" class="form-control" id="password2" placeholder="Konfirmasi Password">
+                            <input type="password" name="password2" class="form-control" id="password2" placeholder="Konfirmasi Password">
                         </div>
                         <!-- Akhir Informasi Akun -->
 
@@ -82,7 +75,7 @@
                             <b>Prefensi Pengguna</b>
                         </h5>
 
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" name="jenis_user" aria-label="Default select example">
                             <option selected>Pilih Prefensi Pengguna</option>
                             <option value="1">Pelajar</option>
                             <option value="2">Pelaku Usaha</option>
@@ -90,83 +83,37 @@
                             <option value="4">Lainnya</option>
                         </select>
 
-                        <!-- <div class="form-check">
-                            <label class="form-check-label" for="pelajar">
-                                Pelajar
-                            </label>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pelajar">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label" for="aktivis_lingkungan">
-                                Aktivis Lingkungan
-                            </label>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="aktivis_lingkungan">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label" for="pelaku_usaha">
-                                Pelaku Usaha
-                            </label>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pelaku_usaha">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pelaku_usaha">
-                            <input type="text" class="form-control" id="lainnya" placeholder="Lainnya">
-                        </div> -->
-                        <!-- Akhir Prefensi Pengguna -->
-
                         <!-- Awal Minat Utama -->
                         <h5 class="title">
                             <b>Minat Utama</b>
                         </h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" name="edukasi_iot" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Edukasi IoT
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" name="produk_ramah_lingkungan" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Marketplace Produk Ramah Lingkungan
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" name="pelatihan_digital" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Pelatihan Digital
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" name="edukasi_ar" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Edukasi AR untuk Anak
                             </label>
                         </div>
                         <!-- Akhir Minat Utama -->
-
-                        <!-- <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">GENDER</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                            <option>Other</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                            <button class="btn btn--radius btn--green" name="daftar" type="submit">Submit</button>
                         </div>
                     </form>
                 </div>

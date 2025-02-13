@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+
+    header("Location: login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,19 +38,8 @@
             </div>
         </form>
         <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Settings</a></li>
-                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                    <li>
-                        <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
-                </ul>
-            </li>
-        </ul>
+        <?php require_once "template/navigasi.php" ?>
+        <!-- Akhir Navbar -->
     </nav>
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
@@ -89,213 +89,199 @@
         </div>
         <div id="layoutSidenav_content">
             <main>
-                <div class="container-fluid px-4">
-                    <div class="row justify-content-md-center">
-                        <!-- <div class="col-1"></div> -->
-                        <div class="col-8 mx-2">
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="mt-5"><b><i>Selamat Datang</i></b></h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-8 mx-2">
+                            <div class="row my-4">
+                                <div class="col-12 mb-4">
+                                    <h3 class="mt-3"><b><i>Selamat Datang</i></b></h3>
+                                    <h1 class="text-success"><b>Sobat Yota</b></h1>
+                                    <p class="me-3" style="font-size: 150px; font-weight: bold; color:green; margin-top: -30px">SiYota</p>
+                                    <h4 style="font-size: 30px; font-weight: bold; font-style: italic; margin-top: -25px;">Innovation for Earth</h4>
+                                    <p style="text-align: justify;">
+                                        Platform Sistem Informasi Youth of Technology and Action yang akan menemani sobat-sobat untuk menyalurkan minat, mengembangkan bakat, menampung ide dan gagasan, bertukar pandangan, dan berbagi pengalaman untuk kehidupan berkelanjutan.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <a href="#" class="btn btn-warning d-grid gap-2">Putar Jinggle YETC</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
+                            <!-- <div class="row">
+                                <div class="col-12">
                                     <h1 class="text-success"><b>Sobat Yota</b></h1>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
+                            </div> -->
+                            <!-- <div class="row">
+                                <div class="col-12">
                                     <h4 style="font-size: 150px; font-weight: bold; color:green; margin-top: -30px">SiYota</h4>
                                 </div>
-                            </div>
-                            <div class="row">
+                            </div> -->
+                            <!-- <div class="row">
                                 <div class="col">
                                     <h4 style="font-size: 30px; font-weight: bold; font-style: italic; margin-top: -25px;">Innovation for Earth</h4>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <h5 class="text-success">
+                            </div> -->
+                            <!-- <div class="row">
+                                <div class="col-12">
+                                    <p class="text-justify">
                                         Platform Sistem Informasi Youth of Technology and Action yang akan menemani sobat-sobat untuk menyalurkan minat, mengembangkan bakat, menampung ide dan gagasan, bertukar pandangan, dan berbagi pengalaman untuk kehidupan berkelanjutan.
-                                    </h5>
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="row my-5">
+                            </div> -->
+                            <!-- <div class="row my-5">
                                 <div class="col-4">
                                     <a href="#" class="btn btn-warning d-grid gap-2">Putar Jinggle YETC</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="col-3 mt-5">
+                        <div class="col-12 col-md-3 mt-4">
                             <img src="assets/images/bg.jpg" alt="" width="100%" class="shadow-lg p-2 mb-5 bg-body-tertiary rounded">
                         </div>
-                        <div class="col-1">
-
-                        </div>
+                        <!-- <div class="col-1">
+</
+                        </div> -->
                         <hr>
-                        <div class="container">
-                            <div class="container">
-                                <div class="row justify-content-md-center">
-                                    <div class="col">
-                                        <h1 class="text-success"><b>Halo, Teriyaki</b></h1>
+                        <!-- <div class="container">
+                            <div class="container"> -->
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <h1 class="text-success"><b>Halo, Teriyaki</b></h1>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <p>Bandung</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Bandung</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Bandung</p>
+                            </div>
+                        </div>
+                        <div class="row mx-auto">
+                            <div class="col bg-info">
+                                <div class="row my-2">
+                                    <div class="col-12">Berdasarkan Lokasimu sekarang, Baleendah</div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Suhu</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Sensor Potensi Banjir</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Pesan</p>
                                     </div>
                                 </div>
-                                <div class="row text-center mx-4">
-                                    <div class="col-4">
-                                        <p>Bandung</p>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Kelembapan</p>
                                     </div>
-                                    <div class="col-4">
-                                        <p>Bandung</p>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Loading ...</p>
                                     </div>
-                                    <div class="col-4">
-                                        <p>Bandung</p>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Sensor Potensi Gempa</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Pesan</p>
                                     </div>
                                 </div>
-                                <div class="row bg-info">
-                                    <div class="col">
-                                        <div class="row my-2">
-                                            <div class="col">Berdasarkan Lokasimu sekarang, Baleendah</div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Suhu</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Sensor Potensi Banjir</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
-                                            </div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Kelembapan</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Sensor Potensi Gempa</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
-                                            </div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Kecepatan Angin</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Senso Kualitas Air</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
-                                            </div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Hujan atau Tidak Hujan</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="text-success"><b>Kamu memasang Perangkat Penyiraman Otomatis</b></p>
-                                            </div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Kualitas Air Hujan</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Kelembapan Tanah</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
-                                            </div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Cuaca</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Status Penyiraman</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
-                                            </div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Potensi Bencana</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Loading ...</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="btn btn-warning d-grid gap-2">Jelajahi Perangkat Lainnya</p>
-                                            </div>
-                                        </div>
-                                        <div class="row my-2">
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">DARURAT!</p>
-                                            </div>
-                                            <div class="col-2">
-                                                <p class="btn btn-success d-grid gap-2">Pesan</p>
-                                            </div>
-                                            <div class="col-4">
-
-                                            </div>
-                                        </div>
-                                        <!-- <div class="col-2">
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Kecepatan Angin</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Senso Kualitas Air</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Hujan atau Tidak Hujan</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <p class="text-success text-center"><b>Kamu memasang Perangkat Penyiraman Otomatis</b></p>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Kualitas Air Hujan</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Kelembapan Tanah</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Cuaca</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Status Penyiraman</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Potensi Bencana</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Loading ...</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-grid gap-2">
+                                        <p class="btn btn-warning d-grid gap-2">Jelajahi Perangkat Lainnya</p>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">DARURAT!</p>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <p class="btn btn-success d-grid gap-2">Pesan</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-2">
                                         <p class="btn btn-success d-grid gap-2">Suhu</p>
                                     </div>
                                     <div class="col-2">
                                         <p class="btn btn-success d-grid gap-2">Suhu</p>
                                     </div> -->
-                                    </div>
-                                </div>
                             </div>
                         </div>
+                        <!-- </div>
+                        </div> -->
                     </div>
 
                     <hr class="my-4">
 
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-12 col-md-6">
                             <h1 class="text-success text-center"><strong>Kegiatan Terbaru</strong></h1>
                             <div class="row my-4 text-center">
                                 <div class="col-md-4">
@@ -337,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-12 col-lg-6">
                             <h1 class="text-success text-center"><strong>Artikel</strong></h1>
                             <div class="row my-4">
                                 <div class="col-md-10 mx-auto">
@@ -361,12 +347,12 @@
                     <hr class="my-2">
 
                     <div class="row my-2">
-                        <div class="col">
+                        <div class="col-12">
                             <h2 class="text-success text-center"><strong>Layanan Kami</strong></h2>
                         </div>
                     </div>
                     <div class="row my-2">
-                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                        <div class="col-12 col-md-2 bg-success text-white rounded px-2 py-2 mx-auto my-1">
                             <h4 class="text-center"><strong>Teknologi</strong></h4>
                             <hr>
                             <ul>
@@ -377,7 +363,7 @@
                             </ul>
                             <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
                         </div>
-                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                        <div class="col-12 col-md-2 bg-success text-white rounded px-2 py-2 mx-auto my-1">
                             <h4 class="text-center"><strong>Teknologi</strong></h4>
                             <hr>
                             <ul>
@@ -388,7 +374,7 @@
                             </ul>
                             <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
                         </div>
-                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                        <div class="col-12 col-md-2 bg-success text-white rounded px-2 py-2 mx-auto my-1">
                             <h4 class="text-center"><strong>Teknologi</strong></h4>
                             <hr>
                             <ul>
@@ -399,7 +385,7 @@
                             </ul>
                             <a href="#" class="btn btn-warning d-grid gap-2">Isi Formulir</a>
                         </div>
-                        <div class="col-md-2 bg-success text-white rounded px-2 py-2 mx-auto">
+                        <div class="col-12 col-md-2 bg-success text-white rounded px-2 py-2 mx-auto my-1">
                             <h4 class="text-center"><strong>Teknologi</strong></h4>
                             <hr>
                             <ul>
@@ -428,51 +414,51 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 text-center">
+                            <div class="col-12 col-md-6 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                                 </a>
                             </div>
-                            <div class="col-md-6 text-center">
+                            <div class="col-12 col-md-6 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro3.png" alt="" class="" width="100%">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 text-center">
+                            <div class="col-12 col-md-4 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro4.png" alt="" class="" width="100%">
                                 </a>
                             </div>
-                            <div class="col-md-4 text-center">
+                            <div class="col-12 col-md-4 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro5.png" alt="" class="" width="100%">
                                 </a>
                             </div>
-                            <div class="col-md-4 text-center">
+                            <div class="col-12 col-md-4 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro7.png" alt="" class="" width="100%">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 text-center">
+                            <div class="col-12 col-md-3 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro6.png" alt="" class="" width="100%">
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center">
+                            <div class="col-12 col-md-3 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro8.png" alt="" class="" width="100%">
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center">
+                            <div class="col-12 col-md-3 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro1.png" alt="" class="" width="100%">
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center">
+                            <div class="col-12 col-md-3 text-center">
                                 <a href="#">
                                     <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                                 </a>
@@ -508,48 +494,43 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-3 col-md-4 mx-auto">
+                        <div class="col-12 col-md-4 mx-auto">
                             <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                         </div>
-                        <div class="col-3 col-md-4 mx-auto">
+                        <div class="col-12 col-md-4 mx-auto">
                             <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                         </div>
-                        <div class="col-3 col-md-4 mx-auto">
+                        <div class="col-12 col-md-4 mx-auto">
                             <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                         </div>
-                        <div class="col-3 col-md-4 mx-auto">
+                        <div class="col-12 col-md-4 mx-auto">
                             <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                         </div>
-                        <div class="col-3 col-md-4 mx-auto">
+                        <div class="col-12 col-md-4 mx-auto">
                             <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                         </div>
-                        <div class="col-3 col-md-4 mx-auto">
+                        <div class="col-12 col-md-4 mx-auto">
                             <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                         </div>
-                        <div class="col-3 col-md-4 mx-auto">
+                        <div class="col-12 col-md-4 mx-auto">
                             <img src="assets/images/logo-program/pro2.png" alt="" class="" width="100%">
                         </div>
                     </div>
 
                     <hr class="my-3">
 
-
-                    <div class="row">
-                        <div class="col"></div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Komunitas Pemuda Cinta Lingkungan dan Teknologi
+                            (Youth Eco-Tech Community) All rights reserved
+                        </div>
                     </div>
                 </div>
+            </footer>
         </div>
-        </main>
-        <footer class="py-4 bg-light mt-auto">
-            <div class="container-fluid px-4">
-                <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Komunitas Pemuda Cinta Lingkungan dan Teknologi
-                        (Youth Eco-Tech Community) All rights reserved
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>

@@ -61,15 +61,12 @@
         <div class="row my-3">
             <div class="col-md-10 mx-auto">
                 <div class="card my-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                    <!-- <div class="card-header"> -->
-                    <!-- <img src="assets/images/bg-header.png" class="card-img-top" alt=""> -->
-                    <!-- </div> -->
                     <div class="card-body">
                         <img src="assets/images/logo-1.png" alt="" width="20%" class="rounded mx-auto d-block">
                         <h1 class="card-title text-center text-success"><strong>Registrasi Akun</strong></h1>
                         <hr>
                         <p class="card-text">
-                        <form method="POST">
+                        <form method="POST" action="logic/logic-register.php">
                             <!-- Awal Data Diri -->
                             <h5 class="title my-3">
                                 <b>Data Diri</b>
@@ -77,22 +74,23 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+                                        <input type="number" name="id" id="" hidden>
+                                        <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Lengkap">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="number" class="form-control" id="nope" placeholder="Nomor Handphone">
+                                        <input type="number" name="nope" class="form-control" id="nope" placeholder="Nomor Handphone">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="alamat" placeholder="Alamat">
+                                        <input type="text" name="alamat" class="form-control" id="alamat" placeholder="Alamat">
                                     </div>
                                 </div>
                             </div>
@@ -105,17 +103,17 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="username" placeholder="Username">
+                                        <input type="text" name="username" class="form-control" id="username" placeholder="Username">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="mb-3">
-                                        <input type="password" class="form-control" id="password2" placeholder="Konfirmasi Password">
+                                        <input type="password" name="password2" class="form-control" id="password2" placeholder="Konfirmasi Password">
                                     </div>
                                 </div>
                             </div>
@@ -126,12 +124,12 @@
                                 <b>Prefensi Pengguna</b>
                             </h5>
 
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Pilih Prefensi Pengguna</option>
-                                <option value="1">Pelajar</option>
-                                <option value="2">Pelaku Usaha</option>
-                                <option value="3">Aktivis Lingkungan</option>
-                                <option value="4">Lainnya</option>
+                            <select class="form-select" name="jenis_user" aria-label="Default select example">
+                                <!-- <option selected>Pilih Prefensi Pengguna</option> -->
+                                <option value="Pelajar">Pelajar</option>
+                                <option value="Pelaku Usaha">Pelaku Usaha</option>
+                                <option value="Aktivis Lingkungan">Aktivis Lingkungan</option>
+                                <option value="Lainnya">Lainnya</option>
                             </select>
                             <!-- Akhir Prefensi Pengguna -->
 
@@ -140,26 +138,26 @@
                                 <b>Minat Utama</b>
                             </h5>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="iot">
+                                <input class="form-check-input" name="minat_user[]" type="checkbox" value="Edukasi IoT" id="minat_user">
                                 <label class="form-check-label" for="iot">
                                     Edukasi IoT
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="marketplace">
-                                <label class="form-check-label" for="marketplace">
+                                <input class="form-check-input" name="minat_user[]" type="checkbox" value="Marketplace Produk Ramah Lingkungan" id="minat_user">
+                                <label class="form-check-label" for="minat_user">
                                     Marketplace Produk Ramah Lingkungan
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="peldig">
-                                <label class="form-check-label" for="pelatihan_digitak">
+                                <input class="form-check-input" name="minat_user[]" type="checkbox" value="Pelatihan Digital" id="minat_user">
+                                <label class="form-check-label" for="minat_user">
                                     Pelatihan Digital
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="edukasi_ar">
-                                <label class="form-check-label" for="edukasi_ar">
+                                <input class="form-check-input" name="minat_user[]" type="checkbox" value="Edukasi AR untuk Anak" id="minat_user">
+                                <label class="form-check-label" for="minat_user">
                                     Edukasi AR untuk Anak
                                 </label>
                             </div>
@@ -172,7 +170,7 @@
                             <div class="mb-3">
                                 <label for="info" class="form-label">Bagaimana Anda mengetahui website ini?</label>
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="jawaban" style="height: 100px"></textarea>
+                                    <textarea class="form-control" name="info" placeholder="Leave a comment here" id="jawaban" style="height: 100px"></textarea>
                                     <label for="jawaban">Jawaban Anda</label>
                                 </div>
                             </div>
@@ -185,17 +183,7 @@
                                         Ya
                                     </label>
                                 </div>
-                                <!-- <input class="form-check-input" type="radio" name="ya" id="ya">
-                                    <label class="form-check-label" for="ya">
-                                        Ya
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="tidak" id="tidak">
-                                    <label class="form-check-label" for="tidak">
-                                        Tidak
-                                    </label>
-                                </div> -->
+
                                 <!-- </div> -->
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="setuju">
@@ -205,14 +193,19 @@
                                 </div>
                                 <!-- Akhir Informasi Tambahan -->
 
+                                <div class="row justify-content-md-center my-3">
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button type="submit" class="btn btn-primary" name="daftar">Daftar</button>
+                                    </div>
+                                </div>
+                                <!-- <a href="login.php" class="btn btn-primary d-grid gap-2">Daftar</a> -->
+                                </p>
+                                <div class="row mt-3 justify-content-md-center">
+                                    <div class="col-12 col-md-8 text-center">
+                                        <p class="text-success">Sudah punya akun? <a href="login.php" class="text-success"><strong>Klik Disini</strong></a></p>
+                                    </div>
+                                </div>
                         </form>
-                        </p>
-                        <a href="login.php" class="btn btn-primary d-grid gap-2">Daftar</a>
-                        <div class="row mt-3 justify-content-md-center">
-                            <div class="col-8 text-center">
-                                <p class="text-success">Sudah punya akun? <a href="login.php" class="text-success"><strong>Klik Disini</strong></a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

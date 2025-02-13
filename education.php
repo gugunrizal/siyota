@@ -27,19 +27,8 @@
             </div>
         </form>
         <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Settings</a></li>
-                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                    <li>
-                        <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
-                </ul>
-            </li>
-        </ul>
+        <?php require_once "template/navigasi.php" ?>
+        <!-- Akhir Navbar -->
     </nav>
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
@@ -92,7 +81,7 @@
                 <div class="container-fluid px-4">
                     <div class="row justify-content-md-center">
                         <!-- <div class="col-1"></div> -->
-                        <div class="col-8 mx-2">
+                        <div class="col-12 col-md-8 mx-2">
                             <div class="row">
                                 <div class="col">
                                     <h3 class="mt-5"><b><i>Selamat Datang</i></b></h3>
@@ -104,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-3 d-grid gap-2">
+                                <div class="col-12 col-md-6 d-grid gap-2">
                                     <p class="btn btn-success">Hard Skill</p>
                                 </div>
                             </div>
@@ -143,7 +132,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-3 d-grid gap-2">
+                                <div class="col-12 col-md-6 d-grid gap-2">
                                     <p class="btn btn-success">Soft Skill</p>
                                 </div>
                             </div>
@@ -188,7 +177,7 @@
                             </div>
 
                         </div>
-                        <div class="col-3 mt-5">
+                        <div class="col-12 col-md-3 mt-5">
                             <div class="row">
                                 <div class="col">
                                     <h1 class="text-success"><b>LAINNYA</b></h1>
@@ -230,7 +219,7 @@
                     </div>
                     <div class="row justify-content-md-center">
                         <!-- <div class="col-1"></div> -->
-                        <div class="col-8 mx-2">
+                        <div class="col-12 col-md-6 mx-2">
                             <div class="row">
                                 <div class="col">
                                     <h3 class="mt-5"><b><i>Informasi</i></b></h3>
@@ -242,7 +231,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-3 d-grid gap-2">
+                                <div class="col-12 col-6 d-grid gap-2">
                                     <p class="btn btn-success">Bootcamp</p>
                                 </div>
                             </div>
@@ -252,7 +241,7 @@
                                         <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <div class="row">
                                         <div class="col">
                                             <h6 class="text-success"><b>Pelatihan Pertanian Organik</b></h6>
@@ -278,8 +267,8 @@
                                                     <td>09.00 s.d selesai</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <a href="#" class="btn btn-warning">Daftar</a>
+                                                    <td colspan="3">
+                                                        <a href="#" class="btn btn-warning ">Daftar</a>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -293,7 +282,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-3 d-grid gap-2">
+                                <div class="col-12 col-md-6 d-grid gap-2">
                                     <p class="btn btn-success">Pelatihan Offline</p>
                                 </div>
                             </div>
@@ -303,7 +292,7 @@
                                         <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <div class="row">
                                         <div class="col">
                                             <h6 class="text-success"><b>Praktik penerapan sensor kualitas air sungai
@@ -346,7 +335,7 @@
                             </div>
 
                         </div>
-                        <div class="col-3 mt-5">
+                        <div class="col-12 col-md-3 mt-5">
                             <div class="row">
                                 <div class="col">
                                     <h1 class="text-success"><b>LAINNYA</b></h1>
@@ -396,7 +385,7 @@
                             </div>
                         </div>
                         <div class="row my-2">
-                            <div class="col-md-5 mx-auto bg-warning rounded py-2">
+                            <div class="col-12 col-md-5 mx-auto bg-warning rounded py-2 my-2">
                                 <h4 class="text-white text-center">Judul Artikel</h4>
                                 <div class="card">
                                     <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
@@ -405,7 +394,7 @@
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis optio commodi magnam amet velit exercitationem fugit soluta sunt tempora porro?
                                 </p>
                             </div>
-                            <div class="col-md-5 mx-auto bg-warning rounded py-2">
+                            <div class="col-12 col-md-5 mx-auto bg-warning rounded py-2 my-2">
                                 <h4 class="text-white text-center">Judul Artikel</h4>
                                 <div class="card">
                                     <img src="assets/images/bg.jpg" class="card-img-top" alt="...">
