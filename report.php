@@ -29,7 +29,8 @@ if (!isset($_SESSION['username'])) {
 
     include("logic/conn.php");
 
-    $sql = "SELECT * FROM tb_user";
+    $id = $_SESSION['username'];
+    $sql = "SELECT * FROM tb_user WHERE username = '$id'";
     $result = mysqli_query($conn, $sql);
     $data = mysqli_fetch_array($result);
 
