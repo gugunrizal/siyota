@@ -1,12 +1,18 @@
 <?php
 
 session_start();
+$page = "Home";
 
 if (!isset($_SESSION['username'])) {
 
     header("Location: login.php");
 }
 
+require_once "logic/conn.php";
+$username = $_SESSION['username'];
+$sql = "SELECT * FROM tb_user WHERE username = '$username'";
+$result = mysqli_query($conn, $sql);
+$data = mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
@@ -25,22 +31,9 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color: green">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="home.php" style="color: white;">SiYota</a>
-        <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-success" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
-        <!-- Navbar-->
-        <?php require_once "template/navigasi.php" ?>
-        <!-- Akhir Navbar -->
-    </nav>
+    <!-- Navbar-->
+    <?php include "template/navigasi.php" ?>
+    <!-- Akhir Navbar -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark bg-success" id="sidenavAccordion">
@@ -48,43 +41,44 @@ if (!isset($_SESSION['username'])) {
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Menu</div>
                         <a class="nav-link active" href="home.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-house"></i></div>
                             Home
                         </a>
                         <a class="nav-link" href="education.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-book"></i></div>
                             Education
                         </a>
                         <a class="nav-link" href="lingkungan.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-seedling"></i></div>
                             Lingkungan
                         </a>
-                        <a class="nav-link" href="chat-bot.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-brands fa-rocketchat"></i></div>
                             Chat Bot
                         </a>
-                        <a class="nav-link" href="games.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-gamepad"></i></div>
                             Games
                         </a>
-                        <a class="nav-link" href="marketplace.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-store"></i></div>
                             Marketplace
                         </a>
                         <div class="sb-sidenav-menu-heading">Lainnya</div>
-                        <a class="nav-link" href="info.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-circle-info"></i></div>
                             Info
                         </a>
-                        <a class="nav-link" href="upload_layanan.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="upload-layanan.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-cloud-arrow-up"></i></div>
                             Pengajuan Layanan
                         </a>
                         <a class="nav-link" href="report.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-flag"></i></div>
                             Laporan
                         </a>
                     </div>
+                </div>
             </nav>
         </div>
         <div id="layoutSidenav_content">
@@ -103,70 +97,58 @@ if (!isset($_SESSION['username'])) {
                                     </p>
                                     <div class="row">
                                         <div class="col-12 col-md-4">
-                                            <a href="#" class="btn btn-warning d-grid gap-2">Putar Jinggle YETC</a>
+                                            <button class="btn btn-warning d-grid gap-2" id="playPauseButton">
+                                                Putar Jinggle YETC
+                                            </button>
+                                            <audio id="audio">
+                                                <source src="assets/audio/audio.mp3" type="audio/mpeg">
+                                                Browser kamu tidak mendukung audio tag.
+                                            </audio>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="row">
-                                <div class="col-12">
-                                    <h1 class="text-success"><b>Sobat Yota</b></h1>
-                                </div>
-                            </div> -->
-                            <!-- <div class="row">
-                                <div class="col-12">
-                                    <h4 style="font-size: 150px; font-weight: bold; color:green; margin-top: -30px">SiYota</h4>
-                                </div>
-                            </div> -->
-                            <!-- <div class="row">
-                                <div class="col">
-                                    <h4 style="font-size: 30px; font-weight: bold; font-style: italic; margin-top: -25px;">Innovation for Earth</h4>
-                                </div>
-                            </div> -->
-                            <!-- <div class="row">
-                                <div class="col-12">
-                                    <p class="text-justify">
-                                        Platform Sistem Informasi Youth of Technology and Action yang akan menemani sobat-sobat untuk menyalurkan minat, mengembangkan bakat, menampung ide dan gagasan, bertukar pandangan, dan berbagi pengalaman untuk kehidupan berkelanjutan.
-                                    </p>
-                                </div>
-                            </div> -->
-                            <!-- <div class="row my-5">
-                                <div class="col-4">
-                                    <a href="#" class="btn btn-warning d-grid gap-2">Putar Jinggle YETC</a>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="col-12 col-md-3 mt-4">
                             <img src="assets/images/bg.jpg" alt="" width="100%" class="shadow-lg p-2 mb-5 bg-body-tertiary rounded">
                         </div>
-                        <!-- <div class="col-1">
-</
-                        </div> -->
+
                         <hr>
-                        <!-- <div class="container">
-                            <div class="container"> -->
+
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <h1 class="text-success"><b>Halo, Teriyaki</b></h1>
+                                <h1 class="text-success">
+                                    <b>Halo,
+                                        <?= $data['nama'] ?>
+                                    </b>
+                                </h1>
                             </div>
                         </div>
                         <div class="row text-center">
                             <div class="col-4">
-                                <p>Bandung</p>
+                                <p class="fw-bold" id="location">
+                                    <i class='fas fa-solid fa-location-dot'></i> Menunggu Lokasi...
+                                </p>
                             </div>
                             <div class="col-4">
-                                <p>Bandung</p>
+                                <p class="fw-bold">
+                                    <i class='fas fa-solid fa-calendar'></i>
+                                    <?php
+                                    echo date('d/M/Y');
+                                    ?>
+                                </p>
                             </div>
                             <div class="col-4">
-                                <p>Bandung</p>
+                                <p class="fw-bold" id="jam">
+                                    <?php
+                                    date_default_timezone_set("Asia/jakarta");
+                                    ?>
+                                </p>
                             </div>
                         </div>
                         <div class="row mx-auto">
                             <div class="col bg-info">
-                                <div class="row my-2">
-                                    <div class="col-12">Berdasarkan Lokasimu sekarang, Baleendah</div>
-                                </div>
-                                <div class="row my-2">
+                                <div class="row mt-4">
                                     <div class="col-12 col-md-3">
                                         <p class="btn btn-success d-grid gap-2">Suhu</p>
                                     </div>
@@ -532,13 +514,8 @@ if (!isset($_SESSION['username'])) {
             </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-    <script src="assets/js/datatables-simple-demo.js"></script>
-</body>
+    <?php
 
-</html>
+    include("template/footer.php");
+
+    ?>

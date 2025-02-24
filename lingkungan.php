@@ -1,3 +1,20 @@
+<?php
+$page = "lingkungan";
+session_start();
+
+if (!isset($_SESSION['username'])) {
+
+    header("Location: login.php");
+}
+require_once "logic/conn.php";
+$username = $_SESSION['username'];
+$sql = "SELECT * FROM tb_user WHERE username = '$username'";
+$result = mysqli_query($conn, $sql);
+$data = mysqli_fetch_array($result);
+?>
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,22 +31,9 @@
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color: green">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="home.php" style="color: white;">SiYota</a>
-        <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-success" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
-        <!-- Navbar-->
-        <?php require_once "template/navigasi.php" ?>
-        <!-- Akhir Navbar -->
-    </nav>
+    <!-- Navbar-->
+    <?php include "template/navigasi.php" ?>
+    <!-- Akhir Navbar -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark bg-success" id="sidenavAccordion">
@@ -37,43 +41,44 @@
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Menu</div>
                         <a class="nav-link" href="home.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-house"></i></div>
                             Home
                         </a>
                         <a class="nav-link" href="education.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-book"></i></div>
                             Education
                         </a>
                         <a class="nav-link active" href="lingkungan.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-seedling"></i></div>
                             Lingkungan
                         </a>
-                        <a class="nav-link" href="chat-bot.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-brands fa-rocketchat"></i></div>
                             Chat Bot
                         </a>
-                        <a class="nav-link" href="games.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-gamepad"></i></div>
                             Games
                         </a>
-                        <a class="nav-link" href="marketplace.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-store"></i></div>
                             Marketplace
                         </a>
                         <div class="sb-sidenav-menu-heading">Lainnya</div>
-                        <a class="nav-link" href="info.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-circle-info"></i></div>
                             Info
                         </a>
-                        <a class="nav-link" href="upload_layanan.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <a class="nav-link" href="upload-layanan.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-cloud-arrow-up"></i></div>
                             Pengajuan Layanan
                         </a>
                         <a class="nav-link" href="report.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-flag"></i></div>
                             Laporan
                         </a>
                     </div>
+                </div>
             </nav>
         </div>
         <div id="layoutSidenav_content">
@@ -106,7 +111,7 @@
                             <div class="row my-2">
                                 <span class="col align-baseline">
                                     <a href="#" class="h6 text-success text-decoration-none">
-                                        <i class="fas fa-tachometer-alt text-success"></i>
+                                        <i class="fas fa-solid fa-seedling"></i>
                                         <strong>Informasi Kegiatan Lingkungan</strong>
                                     </a>
                                 </span>
@@ -114,7 +119,7 @@
                             <div class="row my-2">
                                 <span class="col align-baseline">
                                     <a href="#" class="h6 text-success text-decoration-none">
-                                        <i class="fas fa-tachometer-alt text-success"></i>
+                                        <i class="fas fa-solid fa-trash text-success"></i>
                                         <strong>Sistem Pengelolaan Sampah</strong>
                                     </a>
                                 </span>
@@ -122,7 +127,7 @@
                             <div class="row my-2">
                                 <span class="col align-baseline">
                                     <a href="#" class="h6 text-success text-decoration-none">
-                                        <i class="fas fa-tachometer-alt text-success"></i>
+                                        <i class="fas fa-solid fa-microchip text-success"></i>
                                         <strong>Monitoring IoT</strong>
                                     </a>
                                 </span>
@@ -142,7 +147,7 @@
                                     <div class="col-md-12">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="fas fa-tachometer-alt text-success"></i>
+                                                <i class="fas fa-solid fa-seedling text-success"></i>
                                                 <strong>Informasi Kegiatan Lingkungan</strong>
                                             </a>
                                         </span>
@@ -176,7 +181,7 @@
                                     <div class="col my-1 text-success">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <i class="badge fas fa-solid fa-trash text-bg-success"></i>
                                                 <strong>Sistem Pengelolaan Sampah</strong>
                                             </a>
                                         </span>
@@ -186,7 +191,7 @@
                                     <div class="col my-1 text-success">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <i class="badge fas fa-solid fa-microchip text-bg-success"></i>
                                                 <strong>Monitoring IoT</strong>
                                             </a>
                                         </span>
@@ -205,7 +210,7 @@
                                     <div class="col-md-12">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="fas fa-tachometer-alt text-success"></i>
+                                                <i class="fas fa-solid fa-trash text-success"></i>
                                                 <strong>Sistem Pengelolaan Sampah</strong>
                                             </a>
                                         </span>
@@ -287,7 +292,7 @@
                                     <div class="col my-1 text-success">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <i class="badge fas fa-solid fa-seedling text-bg-success"></i>
                                                 <strong>Informasi Kegiatan Lingkungan</strong>
                                             </a>
                                         </span>
@@ -297,7 +302,7 @@
                                     <div class="col my-1 text-success">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <i class="badge fas fa-solid fa-microchip text-bg-success"></i>
                                                 <strong>Monitoring IoT</strong>
                                             </a>
                                         </span>
@@ -314,7 +319,7 @@
                             <div class="col-12 col-md-12">
                                 <span class="col align-baseline">
                                     <a href="#" class="h6 text-success text-decoration-none">
-                                        <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                        <i class="badge fas fa-solid fa-microchip text-bg-success"></i>
                                         <strong>Monitoring IoT</strong>
                                     </a>
                                 </span>
@@ -442,7 +447,7 @@
                                     <div class="col my-1 text-success">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
+                                                <i class="badge fas fa-solid fa-seedling text-bg-success"></i>
                                                 <strong>Informasi Kegiatan Lingkungan</strong>
                                             </a>
                                         </span>
@@ -452,8 +457,8 @@
                                     <div class="col my-1 text-success">
                                         <span class="col align-baseline">
                                             <a href="#" class="h6 text-success text-decoration-none">
-                                                <i class="badge fas fa-tachometer-alt text-bg-success"></i>
-                                                <strong>Monitoring IoT</strong>
+                                                <i class="badge fas fa-solid fa-trash text-bg-success"></i>
+                                                <strong>Sistem Pengelolaan Sampah</strong>
                                             </a>
                                         </span>
                                     </div>
@@ -474,13 +479,9 @@
             </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-    <script src="assets/js/datatables-simple-demo.js"></script>
-</body>
 
-</html>
+    <?php
+
+    include("template/footer.php");
+
+    ?>
